@@ -25,6 +25,9 @@ class ArticlesController < ApplicationController
   end 
   
   def update 
+    article = Article.find(params[:id])
+    article.update
+    
     raise params.inspect
   end 
 end
